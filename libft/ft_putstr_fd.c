@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaharkat <yaharkat@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yaharkat <yaharkat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:00:21 by yaharkat          #+#    #+#             */
-/*   Updated: 2023/11/07 17:54:01 by yaharkat         ###   ########.fr       */
+/*   Updated: 2023/11/11 02:35:04 by yaharkat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_putstr_fd(char *s, int fd)
 {
-	int	count;
-
 	if (!s)
 		return (ft_putstr_fd("(null)", 1));
-	count = write(fd, s, ft_strlen(s));
-	return (count);
+	return (write(fd, s, ft_strlen(s)));
 }

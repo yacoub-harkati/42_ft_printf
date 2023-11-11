@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaharkat <yaharkat@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yaharkat <yaharkat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 06:03:08 by yaharkat          #+#    #+#             */
-/*   Updated: 2023/11/08 13:19:56 by yaharkat         ###   ########.fr       */
+/*   Updated: 2023/11/11 02:20:59 by yaharkat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ int	ft_printf(const char *s, ...)
 
 	i = 0;
 	count = 0;
+	if (!s)
+		return (-1);
 	va_start(list, s);
 	while (s[i])
 	{

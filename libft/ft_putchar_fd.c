@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaharkat <yaharkat@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yaharkat <yaharkat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:00:13 by yaharkat          #+#    #+#             */
-/*   Updated: 2023/11/07 21:11:25 by yaharkat         ###   ########.fr       */
+/*   Updated: 2023/11/11 02:34:38 by yaharkat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 int	ft_putchar_fd(char c, int fd)
 {
-	int	count;
-
-	count = write(fd, &c, 1);
-	return (count);
+	return (write(fd, &c, 1));
 }
